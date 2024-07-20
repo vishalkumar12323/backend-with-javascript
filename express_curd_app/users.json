@@ -7,5 +7,11 @@
   { "id": 6, "name": "john duo", "age": 39 },
   { "id": 7, "name": "john bob", "age": 39 },
   { "id": 8, "name": "adam bob", "age": 34 },
-  { "id": 9, "name": "devil", "age": 43 }
+  { "id": 9, "name": "devil", "age": 43 },
+  { "id": 10, "name": "devid-dawan", "age": 35 },
+  { "id": 11, "name": "aman", "age": 16 },
+  { "id": 12, "name": "jyoti", "age": 22 },
+  { "id": 13, "name": "nisha", "age": 18 },
+  { "id": 14, "name": "kusum", "age": 18 },
+  { "id": 15, "name": "mamata", "age": 19 }
 ]
