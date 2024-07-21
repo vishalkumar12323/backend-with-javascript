@@ -16,7 +16,7 @@ app.use(bodyParser.json());
 app.use(cors());
 
 app.get("/users", (req, res) => {
-  res.json(users);
+  res.status(200).json(users);
 });
 
 app.post("/create-user", (req, res) => {
@@ -49,6 +49,35 @@ app.post("/create-user", (req, res) => {
   //   message: "User created successfully",
   //   users: JSON.parse(allUsers),
   // });
+});
+
+app.get("/user/:userId", (req, res) => {
+  const { userId } = req.params;
+  const user = users.find((user) => user.id === parseInt(userId));
+
+  res.status(200).json({ user });
+});
+
+app.patch("/update/:userId", (req, res) => {
+  const { userId } = req.params;
+  // const { name, age } = req.body;
+  // const user = users.find((u) => u.id === parseInt(userId));
+
+  // if (user) {
+  //   user.name = name || user.name;
+  //   user.age = age || user.age;
+  //   fs.writeFile(
+  //     path.join(__dirname, "users.json"),
+  //     JSON.stringify([...users, user]),
+  //     "utf-8",
+  //     (err, data) => {
+  //       if (err) console.log(err);
+  //       if (data) {
+  //         res.status(200).json({ status: "ok", users: JSON.parse(data) });
+  //       }
+  //     }
+  //   );
+  // }
 });
 app.listen(port, () => {
   console.log(`Server listening on http://localhost:${port}`);
