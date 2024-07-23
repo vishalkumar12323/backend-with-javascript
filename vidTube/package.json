@@ -1,0 +1,29 @@
+{
+  "name": "vidtube",
+  "version": "1.0.0",
+  "description": "project like youtube backend clone",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index",
+    "dev": "nodemon src/index"
+  },
+  "keywords": [
+    "express",
+    "mongodb",
+    "mongoose",
+    "backend",
+    "javascript"
+  ],
+  "author": "vishal kumar",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "^3.3.3"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.5.1"
+  }
+}
