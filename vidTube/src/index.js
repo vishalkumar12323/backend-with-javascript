@@ -11,4 +11,4 @@ connectDB()
             console.log(`server listening on port ${appConstant.port}`),
         );
     })
-    .catch((e) => {});
+    .catch((e) => console.log(e));
